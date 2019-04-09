@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Latitude vs. Windspeed Plot</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="index.html">Lattitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="lat_vs_temperature.html">Latitude vs. Temperature</a>
+                          <a class="dropdown-item" href="lat_vs_humidity.html">Latitude vs. Humidity</a>
+                          <a class="dropdown-item" href="lat_vs_cloudiness.html">Latitude vs. Cloudiness</a>
+                          <a class="dropdown-item" href="lat_vs_ws.html">Latitude vs. Wind Speed</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="comparison.html">Comparison</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+                </ul>
+              </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8 big-box">
+                    <h3>Windspeed</h3>
+                    <hr />
+                    <img src="img/lat_vs_windspeed.png" class="img-fluid" alt="Latitude vs. Temperature Plot" />
+                    <p>
+                        There is no clear cut relation between latitude and windspeed visible from this data.
+                        It does appear that the highest windspeeds occur far north and far south, however.
+                    </p>
+                </div>
+
+                <div class="col-sm-4">
+                    <h4>Visualizations</h4>
+                    <hr />
+                    <div class="row">
+                        <div class="col mini-box">
+                            <a href="lat_vs_temperature.html">
+                                <img src="img/lat_vs_temp.png" class="img-fluid" alt="Latitude vs. Temperature Plot" />
+                            </a>
+                        </div>
+                        <div class="col mini-box">
+                            <a href="lat_vs_humidity.html">
+                                <img src="img/lat_vs_humidity.png" class="img-fluid" alt="Latitude vs. Humidity Plot" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mini-box">
+                            <a href="lat_vs_cloudiness.html">
+                                <img src="img/lat_vs_cloudiness.png" class="img-fluid" alt="Latitude vs. Cloudiness Plot" />
+                            </a>
+                        </div>
+                        <div class="col mini-box">
+                            <a href="lat_vs_ws.html">
+                                <img src="img/lat_vs_windspeed.png" class="img-fluid active-image" alt="Latitude vs. Windspeed Plot" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
