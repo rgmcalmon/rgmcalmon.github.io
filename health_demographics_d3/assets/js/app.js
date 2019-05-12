@@ -1,5 +1,3 @@
-// @TODO: YOUR CODE HERE!
-
 const svgWidth = 900;
 const svgHeight = 600;
 
