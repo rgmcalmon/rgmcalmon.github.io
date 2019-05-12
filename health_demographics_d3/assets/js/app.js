@@ -120,7 +120,7 @@ function renderTextY(textGroup, yScale, yName) {
 function updateToolTip(chosenXAxis, chosenYAxis, textGroup) {
 	const toolTip = d3.tip()
 		.attr("class", "d3-tip")
-		.offset([100,-80])
+		.offset([90,-70])
 		.html(d => {
 			let labelX = "";
 			let labelY = "";
