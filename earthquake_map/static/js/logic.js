@@ -128,7 +128,6 @@ function createMap (earthquakes, plateBoundaries) {
 				div.innerHTML += '+';
 			}
 		});
-		console.log(div);
 		return div;
     };
 
@@ -147,7 +146,6 @@ function createMap (earthquakes, plateBoundaries) {
 	// Thanks to Hugo Ahlenius, Nordpil, and Peter Bird for the source data
 	//  https://github.com/fraxen/tectonicplates
 	const tectonicData = await d3.json("static/json/PB2002_steps.json");
-	console.log(tectonicData);
 
 	// Send the features of our GeoJSON data to a function to create the map features
 	createFeatures(data.features, tectonicData.features);
