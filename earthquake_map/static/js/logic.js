@@ -103,11 +103,12 @@ function createMap (earthquakes, plateBoundaries) {
 	const myMap = L.map("map", {
 		center: [0,-70],
 		zoom: 4,
-		layers: [satelliteMap, earthquakes, plateBoundaries]
+		layers: [satelliteMap, earthquakes, plateBoundaries],
+		worldCopyJump: true
 	});
 
 	L.control.layers(baseMaps, overlayMaps, {
-            collapsed: true
+            collapsed: false
     }).addTo(myMap);
 
 
